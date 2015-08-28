@@ -48,4 +48,22 @@ language messages zh_CN.utf-8
 source $VIMRUNTIME/delmenu.vim 
 source $VIMRUNTIME/menu.vim 
 
+
+"for python begin
+set fileencodings=utf-8,gbk  
+set ambiwidth=double
+
+set smartindent  
+set smarttab  
+set expandtab  
+set tabstop=4  
+set softtabstop=4  
+set shiftwidth=4  
+set backspace=2
+set textwidth=79
+
+filetype plugin on  
+    autocmd FileType python set omnifunc=pythoncomplete#Complete
+
 map <F5> :!python.exe % <CR>
+"for python end
